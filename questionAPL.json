@@ -1,0 +1,63 @@
+{
+  "type": "APL",
+  "version": "1.1",
+  "settings": {},
+  "theme": "dark",
+  "import": [],
+  "resources": [],
+  "styles": {},
+  "onMount": [],
+  "graphics": {},
+  "commands": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [{
+      "type": "Container",
+      "width": "100%",
+      "height": "100%",
+      "alignItems": "center",
+      "justifyContent": "center",
+      "backgroundColor": "#ffffff",
+      "items": [{
+          "type": "Container",
+          "width": "100%",
+          "height": "100%",
+          "position": "absolute",
+          "items": [{
+            "type": "Image",
+            "source": "${payload.docdata.uri}",
+            "width": "100%",
+            "height": "100%"
+          }]
+        },
+        {
+          "type": "Frame",
+          "width": "75%",
+          "height": "80%",
+          "backgroundColor": "rgba(20, 20, 20, 0.5)",
+          "borderRadius": "10",
+          "item": [{
+            "type": "Container",
+            "width": "100%",
+            "height": "100%",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "items": [{
+              "type": "Text",
+              "text": "${payload.docdata.variables}",
+              "width": "auto",
+              "height": "auto",
+              "textAlign": "center",
+              "textAlignVertical": "center",
+              "color": "white",
+              "fontSize": "8vh"
+            }]
+          }]
+        }
+      ]
+    }]
+  }
+}

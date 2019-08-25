@@ -1,0 +1,50 @@
+{
+  "type": "APL",
+  "version": "1.1",
+  "settings": {},
+  "theme": "dark",
+  "import": [{
+    "name": "alexa-styles",
+    "version": "1.1.0"
+  }],
+  "resources": [],
+  "styles": {},
+  "onMount": [],
+  "graphics": {},
+  "commands": {},
+  "layouts": {},
+
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [{
+      "type": "Container",
+      "width": "100%",
+      "height": "100%",
+      "alignItems": "center",
+      "justifyContent": "center",
+      "backgroundColor": "#ffffff",
+      "items": [{
+          "type": "Container",
+          "width": "100%",
+          "height": "100%",
+          "position": "absolute",
+          "items": [{
+            "type": "Image",
+            "source": "https://media.indiumgames.com/medialibrary/2014/07/MakingMap1.png",
+            "width": "100%",
+            "height": "100%"
+          }]
+        },
+        {
+          "type": "Image",
+          "source": "https://i.imgur.com/qUjoE2T.png",
+          "width": "40%",
+          "height": "40%",
+          "alignItems": "center"
+        }
+      ]
+    }]
+  }
+}
